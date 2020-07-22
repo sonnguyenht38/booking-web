@@ -49,3 +49,28 @@
   transition: border-top-color 1s, border-right-color 1s .2s,
    border-bottom-color 1s .5s, border-left-color 1s .8s;
 }
+
+.effect-3 img {
+  transition: box-shadow .5s;
+}
+.effect-3:hover img{
+  box-shadow: .7rem -.7rem 0 0 #c5885e;
+}
+.effect-3 a {
+  color: black;
+  font-family: Garamond, serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+  letter-spacing: .2rem;
+}
+
+.effect-3 img + p {
+  margin: 1.5rem 0 0;
+}
+
+.effect-3 a + p {
+  color: #c5885e;
+  font-size: .7rem;
+  letter-spacing: .4rem;
+  font-weight: 500;
+}
