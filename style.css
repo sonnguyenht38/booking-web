@@ -50,6 +50,12 @@
    border-bottom-color 1s .5s, border-left-color 1s .8s;
 }
 
+.color-2:hover::after {
+  border-color: white;
+  transition: border-top-color 1s, border-right-color 1s .2s,
+   border-bottom-color 1s .5s, border-left-color 1s .8s;
+}
+
 .effect-3 img {
   transition: box-shadow .5s;
 }
@@ -73,4 +79,27 @@
   font-size: .7rem;
   letter-spacing: .4rem;
   font-weight: 500;
+}
+
+.menu a {
+  color: #dee2e6;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  width: 11rem;
+  height: 11.8rem;
+  position: relative;
+}
+.menu a:hover {
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+.menu img {
+  margin: 3rem 0 1.5rem 3.7rem;
+}
+.menu p {
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 1.25rem;
+  letter-spacing: .2rem;
+  color: white;
 }
