@@ -55,6 +55,11 @@
   transition: border-top-color 1s, border-right-color 1s .2s,
    border-bottom-color 1s .5s, border-left-color 1s .8s;
 }
+.color-3:hover::after {
+  border-color: #c38968;
+  transition: border-top-color 1s, border-right-color 1s .2s,
+   border-bottom-color 1s .5s, border-left-color 1s .8s;
+}
 
 .effect-3 img {
   transition: box-shadow .5s;
@@ -102,4 +107,9 @@
   font-size: 1.25rem;
   letter-spacing: .2rem;
   color: white;
+}
+.content-2 .item-1 img {
+  box-shadow: 0 0 10px 1px #DDD;
+  width: 45rem;
+  position: relative;
 }
