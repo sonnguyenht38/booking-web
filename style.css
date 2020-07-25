@@ -113,3 +113,8 @@
   width: 45rem;
   position: relative;
 }
+
+@keyframes effect-4 {
+  from {left: 0;}
+  to {left: -122rem;}
+}
