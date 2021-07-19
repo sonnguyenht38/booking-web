@@ -1,0 +1,141 @@
+.article {
+	background-image: url(../images/menu-background.jpg); 
+	padding: 10rem 8rem; 
+	width: 100vw;
+}
+
+.article > div:first-child > div:first-child {
+	margin-right: 3rem;
+}
+
+.article > div:first-child > div:first-child > div:first-child {
+	font-family: Garamond, serif; 
+	font-size:45px; 
+	line-height: 35px; 
+	color: white; 
+	letter-spacing: 6px; 
+	margin-bottom: 35px;
+}
+
+.article > div:first-child > div:first-child > div:nth-child(2) {
+	font-size:13px; 
+	line-height: 13px; 
+	color: white; 
+	letter-spacing: 7px;
+}
+
+.menu {
+	display: grid; 
+	grid-template-columns: repeat(4, 1fr); 
+	grid-gap: 1rem; 
+	text-transform: uppercase;
+}
+
+.menu a {
+  color: #dee2e6;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  width: 11rem;
+  height: 11.8rem;
+  position: relative;
+}
+.menu a:hover {
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+.menu img {
+  margin: 3rem 0 1.5rem 3.7rem;
+}
+.menu p {
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 1.25rem;
+  letter-spacing: .2rem;
+  color: white;
+}
+
+/* Tablet: width <= 1024px & > 740px */
+@media only screen and (min-width: 741px) and (max-width: 1024px) {
+  .article > div:first-child > div:first-child {
+  	width: 100vw;
+  }
+
+  .article > div:first-child {
+  	flex-direction: column;
+  }
+
+  .menu {
+  	grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu a {
+  	width: 18rem;
+  	height: 14rem;
+  }
+
+  .article {
+  	padding: 10rem 5rem;
+  }
+}
+
+/* Mobile: width <= 740px & > 320px */
+@media only screen and (min-width: 321px) and (max-width: 740px) {
+  .article > div:first-child > div:first-child {
+  	width: 100vw;
+  }
+
+  .article > div:first-child {
+  	flex-direction: column;
+  }
+
+  .menu {
+  	grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu a {
+  	width: 18rem;
+  	height: 14rem;
+  }
+
+  .article {
+  	padding: 10rem 3rem;
+  }
+}
+
+/* Mobile small: width <= 320px */
+@media only screen and (max-width: 320px) {
+  .article > div:first-child > div:first-child {
+  	width: 100vw;
+  }
+
+  .article > div:first-child {
+  	flex-direction: column;
+  }
+
+  .menu {
+  	grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu a {
+  	width: 16rem;
+  	height: 11rem;
+  }
+
+  .article {
+  	padding: 4rem 2rem 10rem 2rem;
+  }
+
+  .article > div:first-child > div:first-child > div:first-child { 
+	font-size:35px; 
+	line-height: 25px;  
+	letter-spacing: 4px; 
+  }
+
+  .article > div:first-child > div:first-child > a:last-child {
+  	display: none;
+  }
+
+  .article > div:first-child > div:first-child {
+  	margin-bottom: 2rem;
+  }
+}

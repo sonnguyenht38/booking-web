@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/section-1.css">
+    <link rel="stylesheet" type="text/css" href="./css/article.css">
+    <link rel="stylesheet" type="text/css" href="./css/section-2.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.16.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $( "#header" ).load( "./components/header.html" );
+    });
+    </script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $( "#section-1" ).load( "./components/section-1.html" );
+    });
+    </script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $( "#article" ).load( "./components/article.html" );
+    });
+    </script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $( "#section-2" ).load( "./components/section-2.html" );
+    });
+    </script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $( "#footer" ).load( "./components/footer.html" );
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header"></div>
+      <div id="section-1"></div>
+      <div id="article"></div>
+      <div id="section-2"></div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
